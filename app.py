@@ -30,8 +30,6 @@ def display_question(x):
     elif current_question >= amt_of_questions:
         return redirect("/thank-you")
         
-    print(responses)
-    print(current_question)
     try:
         question = surveys.satisfaction_survey.questions[x].question
         question_choices = surveys.satisfaction_survey.questions[x].choices
