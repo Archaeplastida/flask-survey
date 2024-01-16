@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}INSERT TITLE{%endblock%}</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div id="contents">
+    {%block content%} PUT YOUR CONTENT HERE {%endblock%}
+   </div>
+    {%for category,msg in get_flashed_messages(with_categories=true)%}
+    <h2 class="{{category}}">{{msg}}</h2>
+    {%endfor%}
+</body>
+</html>

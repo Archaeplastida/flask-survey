@@ -1,0 +1,97 @@
+body{
+    margin:0;
+    background-image:url("https://wallpapers.com/images/hd/store-background-ir4jwuauxhb30ez1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+#contents{
+    border:1px solid black;
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    padding:10px;
+    overflow:hidden;
+    height:50vh;
+    box-shadow:rgba(0, 0, 0, 0.103) 25px 25px 10px;
+    background:rgba(255,255,255,0.85)
+}
+
+div{
+    background-color:rgba(5, 146, 0, 0.5);
+    display:inline-block;
+    padding:5px;
+}
+
+h1{
+    color:white;
+    font-size:5vh;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+#question-choices{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    box-sizing:content-box;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    height:75%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#question-choices label{
+    font-size:3vh;
+    transform:translate(0,75%)
+}
+
+#question-choices input{
+    height:5vh;
+    width:5vh;
+    cursor:pointer;
+    bottom:40%;
+    
+}
+
+#question-choices button{
+    position:absolute;
+    bottom:0;
+    font-size:5vh;
+    color:white;
+    background-color:rgba(5, 146, 0, 0.5);
+    border:none;
+    cursor:pointer;
+}
+
+.error{
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+    font-weight:bold;
+    background-color:rgba(255,0,0,0.5);
+    padding:10px;
+    display:inline-block;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:3vh;
+    text-align:center;
+}
+
+#start-survey button{
+    position:absolute;
+    bottom:12%;
+    left:50%;
+    transform:translate(-50%, 0);
+    font-size:5vh;
+    color:white;
+    background-color:rgba(5, 146, 0, 0.5);
+    border:none;
+    cursor:pointer;
+}
