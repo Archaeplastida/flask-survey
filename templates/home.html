@@ -3,7 +3,7 @@
 {%block content%}
 <div><h1>{{title}}</h1></div>
 <p>{{instructions}}</p>
-<form action="/questions/0" id="start-survey">
-    <button id="start-survey">START</button>
+<form action="/retrieving-questions" id="start-survey" method="POST">
+    <button id="start-survey" type="submit">START</button>
 </form>
 {%endblock%}
